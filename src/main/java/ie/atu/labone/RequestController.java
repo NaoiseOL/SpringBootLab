@@ -6,15 +6,9 @@ import org.springframework.web.bind.annotation.RestController;
 
 @RestController
 @RequestMapping("/person")
-public class Week3 {
-    @GetMapping("/message")
-    public String getMessage(){
-        return "some message";
+public class RequestController {
+    @GetMapping("/hello")
+    public String getHello(){
+        return "Hello";
     }
-
-    @GetMapping("/details")
-    public String getDetails(){
-        return "Some other Message";
-    }
-
 }
